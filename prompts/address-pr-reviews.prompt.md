@@ -78,7 +78,7 @@ Ask the user: "Apply which changes? [all / recommended / <numbers> / none]"
 For each item the user wants applied:
 
 1. Read the relevant file using `read`.
-2. Check whether the relevant instruction file under `.github/instructions/` applies (e.g. if editing `event_analysis.py`, read `.github/instructions/event-analyzer.instructions.md` first). Follow its conventions strictly.
+2. Check whether any instruction file under `.github/instructions/` applies to the file being edited (e.g. if an instructions file covers the module you're changing, read it first). Follow its conventions strictly.
 3. Apply the minimum change needed to satisfy the reviewer's request. Do not refactor beyond what was asked.
 4. If a change is ambiguous, ask a single clarifying question before editing.
 5. After all edits are done, run `git diff --stat` so the user can see what changed.
