@@ -1,0 +1,43 @@
+name: Feature Request
+description: Propose a new feature, new analysis type, new command, or new output.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem / Motivation
+      description: What gap or friction does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: What the feature should do and which file(s) or component(s) it touches.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Affected Components
+      options:
+        - label: APP_CONFIG (main.py)
+        - label: CalendarStreamliner (main.py)
+        - label: EventAnalyzer (event_analysis.py)
+        - label: CalendarUI (ui.py)
+        - label: LLMClient (llm_client.py)
+        - label: CalendarAPI (calendar_api.py)
+        - label: Install script (scripts/)
+        - label: Integration tests
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: false
