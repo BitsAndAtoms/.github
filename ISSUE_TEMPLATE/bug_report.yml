@@ -1,6 +1,5 @@
 name: Bug Report
 description: Something is broken, producing wrong output, or crashing.
-labels: ["bug"]
 body:
   - type: textarea
     id: summary
@@ -35,19 +34,6 @@ body:
       description: What actually happens. Include any error message or traceback.
     validations:
       required: true
-
-  - type: checkboxes
-    id: affected
-    attributes:
-      label: Affected Module
-      options:
-        - label: main.py / CalendarStreamliner
-        - label: event_analysis.py / EventAnalyzer
-        - label: ui.py / CalendarUI
-        - label: llm_client.py / LLMClient
-        - label: calendar_api.py / CalendarAPI
-        - label: scripts/linux_mint_appctl.sh
-        - label: integration_tests/
 
   - type: textarea
     id: environment
